@@ -1,0 +1,12 @@
+.yellow{
+    color: yellow;
+    
+}
+.green{
+    color: green;
+    
+}
+.block{
+    text-decoration: underline solid red;
+      font-size: 25px;
+  } 

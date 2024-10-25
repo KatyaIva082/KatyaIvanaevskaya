@@ -1,0 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+#gggg{
+    font-family: 'Oxanium', sans-serif;;
+}
+.block{
+    text-decoration: underline solid burlywood;
+      font-size: 30px;
+  } 
+
+.g{
+    text-decoration: underline solid blueviolet;
+}
+.p{
+    text-decoration: line-through dashed red;
+}
+.h{
+    text-decoration: overline double red;
+}
