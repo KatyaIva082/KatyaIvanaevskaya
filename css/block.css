@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; 
+    margin: 0;
+    padding: 20px; 
+}
+
+.box {
+    background-color: #f90879; 
+    border: 2px solid palevioletred; 
+    width: 200px; 
+    height: 50px; 
+    margin: 15px; 
+    padding: 40px; 
+    text-align: center; 
+    color: rgb(0, 0, 0); 
+}
+
+.left {
+    text-align: left; 
+}
+
+.center {
+    text-align: center; 
+}
+
+.right {
+    text-align: right; 
+}
+
+.justify {
+    text-align: justify; 
+}
+
+.padding {
+    padding: 40px; 
+}
+
+.margin {
+    margin: 30px; 
+}
+
+.border {
+    border: 5px dashed purple; 
+}
+
+.box-sizing {
+    box-sizing: content-box; 
+}

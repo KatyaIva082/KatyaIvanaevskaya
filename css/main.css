@@ -21,3 +21,30 @@ body {
 .h{
     text-decoration: overline double red;
 }
+.top{
+	background-color: rgb(240, 216, 187);
+	margin-bottom: 10px;
+}
+
+.bottom{
+	background-color: rgb(12, 88, 29);
+    padding: 2px 1em 0 1em;
+
+}
+.external{
+	background-color: rgb(94, 85, 214);
+	padding: 15px;
+}
+
+.inside{
+	background-color: rgb(240, 216, 187);
+}
+
+.hh{
+    background-color: rgb(94, 255, 214);
+    height: 500px;
+}
+.ww{
+    background-color: rgb(101, 83, 87);
+    width: 600px;
+}
