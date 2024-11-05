@@ -1,0 +1,22 @@
+.box {
+    height: 60px;
+    width: 20px;
+    border: 3px solid crimson;
+    background: coral;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container1 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items:end;
+  }
+
+  .container2 {
+    justify-content: center;
+  }

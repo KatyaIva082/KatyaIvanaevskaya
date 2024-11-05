@@ -1,0 +1,27 @@
+.header {
+    background-color: #07203f;
+    padding: 50px 0;
+    border-bottom:  1px solid grey;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__nickname {
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 36px;
+}
+.header__nav {
+    text-transform: uppercase;
+    color: #ffffff;
+    display:flex;
+    gap: 40px;
+}
+
+@import url("css/block.css");
