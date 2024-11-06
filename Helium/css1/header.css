@@ -1,27 +1,29 @@
 .header {
-    background-color: #07203f;
-    padding: 50px 0;
-    border-bottom:  1px solid grey;
-}
-.container {
-    margin: 0 auto;
-    max-width: 1440px;
+    background-color: #797979;
+    display: flex;
+    align-items: center;
 }
 .header__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .header__nickname {
     color: #ffffff;
+    font-family: Montserrat, sans-serif;
     font-weight: bolder;
     font-size: 36px;
 }
+
 .header__nav {
-    text-transform: uppercase;
-    color: #ffffff;
     display:flex;
     gap: 40px;
 }
 
-@import url("css/block.css");
+.header__nav a {
+    font-family: Montserrat, sans-serif;
+    color:#ffffff;
+    font-size: 36px;
+    text-transform: uppercase;
+}

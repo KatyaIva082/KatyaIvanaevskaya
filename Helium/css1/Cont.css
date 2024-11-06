@@ -1,0 +1,28 @@
+.header_container {
+    background: #5e5e5e;
+    width: 1440px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 135px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    padding-right: 135px;
+
+    text-transform: uppercase;
+
+}
+.section_container {
+    background: #5e5e5e;
+    width: 1440px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 135px;
+    padding-top: 135px;
+    padding-bottom: 150px;
+    padding-right: 135px;
+
+    text-transform: uppercase;
+
+}
