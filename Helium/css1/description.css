@@ -1,6 +1,5 @@
 .description {
     background-color: #797979;
-    /* min-height: calc(100vh - 144px); */
     display: flex;
     align-items: center;
 }
