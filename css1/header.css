@@ -1,0 +1,53 @@
+.header {
+    background-color: #797979;
+    display: flex;
+    align-items: center;
+}
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 55px 0;
+}
+
+
+.header__nickname {
+    color: #D9D9D9;
+    font-family: Montserrat, sans-serif;
+    font-weight: bolder;
+    font-size: 36px;
+}
+
+.header__nav {
+    display:flex;
+    gap: 40px;
+}
+
+.header__nav a {
+    font-family: Montserrat, sans-serif;
+    color:#D9D9D9;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+    .header {
+        
+        flex-direction: column;
+        align-items: center;
+       
+    }
+
+    .header__content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 55px 0;
+    }
+    .header__nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+}

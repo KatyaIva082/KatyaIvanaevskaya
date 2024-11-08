@@ -1,0 +1,74 @@
+.work {
+    background-color: #797979;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.work-section__title {
+    font-size: 72px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #D9D9D9;
+    padding-top: 1px;
+    margin-bottom: 50px;
+}
+
+.work-section__content {
+    display: flex;
+    flex-direction: column; 
+    gap: 115px;
+    margin: 150px;
+    
+}
+
+.work_s {
+    display: flex;
+    flex-direction: row;
+    transition: background-color 0.3s ease;
+}
+
+.work__image {
+    width: 65%;
+    height: 367px;
+}
+
+.work__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-end; 
+    flex: 1; 
+}
+
+.work__title {
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    width: 100%;
+    color: #D9D9D9;
+}
+
+.work__description {
+    font-size: 30px;
+    color: #D9D9D9;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column; /* На мобильных устройствах: картинка над текстом */
+        text-align: center;
+    }
+
+    .project__image {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .project--reversed {
+        flex-direction: column; /* Оставляем вертикальное выравнивание на мобильных */
+    }
+}
