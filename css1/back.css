@@ -1,0 +1,6 @@
+.back-section {
+    background-image: url('https://i.pinimg.com/originals/0e/fd/92/0efd926ac23487347ae508bcec6c3996.jpg'); /* Задаём фоновое изображение */
+    background-size: cover; /* Обеспечивает, что изображение будет покрывать всю секцию */
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Изображение не будет повторяться */
+}
