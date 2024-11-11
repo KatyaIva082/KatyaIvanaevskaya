@@ -5,6 +5,8 @@
 @import url("skill.css");
 @import url("work.css");
 @import url("back.css");
+@import url("java.css");
+@import url("window.css");
 
 body {
     margin: 0;

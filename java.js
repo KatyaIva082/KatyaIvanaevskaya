@@ -1,55 +1,75 @@
-// Сложить два числа
-function sum(a, b) {
-    console.log(a + b);
-}
+// Получаем элементы
+const addProjectBtn = document.getElementById('addProjectBtn');
+const modal = document.getElementById('modal');
+const closeBtn = document.getElementById('closeBtn');
+const okBtn = document.getElementById('okBtn');
+const projectNameInput = document.getElementById('projectName');
+const projectDescriptionInput = document.getElementById('projectDescription');
+const projectImageUrlInput = document.getElementById('projectImageUrl');
+const workSectionContent = document.querySelector('.work-section__content');
 
-// Вернуть наибольшее из 3х чисел
-function maxOfThree(a, b, c) {
-    console.log(Math.max(a, b, c));
-}
+// Функция для открытия модального окна
+addProjectBtn.addEventListener('click', (e) => {
+    modal.classList.add('open'); // Показываем модальное окно
+});
 
-// Вернуть самую длинную строку
-function longestString(arr) {
-    const longest = arr.reduce((a, b) => a.length > b.length ? a : b);
-    console.log(longest);
-}
+// Функция для закрытия модального окна
+closeBtn.addEventListener('click', () => {
+    modal.classList.add('close'); // Скрываем модальное окно
+});
 
-// Является ли слова палиндромом?
-function isPalindrome(word) {
-    const reversed = word.split('').reverse().join('');
-    console.log(word === reversed);
-}
+// Закрытие модального окна при клике на фон
+modal.querySelector('.modal__bg').addEventListener('click', () => {
+    modal.classList.remove('open'); // Скрываем модальное окно
+});
 
-// Сумма элементов массива
-function sumArray(arr) {
-    const sum = arr.reduce((a, b) => a + b, 0);
-    console.log(sum);
-}
+// Закрытие модального окна при клике на крестик
+modal.querySelector('.modal__wrap').addEventListener('click', () => {
+    modal.classList.remove('open'); // Скрываем модальное окно
+});
 
-// Отфильтровать массив чисел (оставить числа больше 10)
-function filterGreaterThanTen(arr) {
-    const filtered = arr.filter(num => num > 10);
-    console.log(filtered);
-}
+// Функция для обработки нажатия кнопки "Ок"
+okBtn.addEventListener('click', () => {
+    const projectName = projectNameInput.value;
+    const projectDescription = projectDescriptionInput.value;
+    const projectImageUrl = projectImageUrlInput.value;
 
-// Отфильтровать массив объектов (младше 50 лет)
-function filterUnderFifty(arr) {
-    const filtered = arr.filter(person => person.age < 50);
-    console.log(filtered);
-}
+    // Проверка на пустое значение
+    if (projectName && projectDescription && projectImageUrl) {
+        const newWork = document.createElement('div');
+        newWork.classList.add('work');
 
-// Склонировать объект
-function cloneObject(obj) {
-    const clone = JSON.parse(JSON.stringify(obj));
-    console.log(clone);
-}
+        const workCount = workSectionContent.children.length;
 
-// Примеры использования
-sum(5, 10);
-maxOfThree(10, 20, 30);
-longestString(["apple", "banana", "cherry"]);
-isPalindrome("racecar");
-sumArray([1, 2, 3, 4, 5]);
-filterGreaterThanTen([5, 15, 25, 3, 12]);
-filterUnderFifty([{ name: "Bob", age: 50}, { name: "Jane", age: 64}, { name: "Jack", age: 25}]);
-cloneObject({ name: "Bob", age: 50, children: [{ name: "Marie", age: 16}, { name: "Jame", age: 12}] });
+        // Проверяем на нечетность
+        if (workCount % 2 !== 0) {
+            newWork.innerHTML = `
+                <div class="work__info">
+                    <h3 class="work__title">${projectName}</h3>
+                    <p class="work__description">${projectDescription}</p>
+                </div>
+                <img src="${projectImageUrl}" alt="${projectName}" class="work__image">
+            `;
+        } else {
+            newWork.innerHTML = `
+                <img src="${projectImageUrl}" alt="${projectName}" class="work__image">
+                <div class="work__info">
+                    <h3 class="work__title">${projectName}</h3>
+                    <p class="work__description">${projectDescription}</p>
+                </div>
+            `;
+        }
+
+        workSectionContent.appendChild(newWork); // Добавляем новый проект в секцию
+
+        // Очищаем поля ввода
+        projectNameInput.value = '';
+        projectDescriptionInput.value = '';
+        projectImageUrlInput.value = '';
+
+        // Закрываем модальное окно
+        modal.classList.remove('open');
+    } else {
+        alert("Пожалуйста, заполните все поля."); // Уведомление о необходимости заполнить поля
+    }
+});
