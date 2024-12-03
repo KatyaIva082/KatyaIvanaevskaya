@@ -6,8 +6,8 @@
 @import url("work.css");
 @import url("back.css");
 @import url("java.css");
-@import url("window.css");
 @import url("quotes.css");
+@import url("modal.css");
 
 body {
     margin: 0;
