@@ -32,3 +32,26 @@
     background-color: rgb(122, 122, 122); 
     color: #D9D9D9;
 }
+
+@media (max-width: 768px) {
+    .java {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 15px; 
+    }
+
+    .java-section__content {
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%; 
+    }
+
+    .java__button {
+        width: 100%; 
+        padding: 20px 50px;
+        font-size: 24px; 
+        max-width: none; 
+        max-height: none; 
+        margin-top: 20px; 
+    }
+}

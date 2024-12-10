@@ -104,3 +104,33 @@
 .modal.open {
     display: flex;
 }
+
+@media (max-width: 768px) {
+    .modal__wrap {
+        padding: 20px; 
+        width: 90%; 
+        max-width: 90%; /
+    }
+
+    .modal__wrap h2 {
+        font-size: 24px; 
+        margin-bottom: 15px; 
+    }
+
+    .modal__wrap input,
+    .modal__wrap textarea {
+        padding: 10px; 
+        font-size: 14px; 
+    }
+
+    #okBtn {
+        padding: 10px 20px; 
+        font-size: 14px; 
+    }
+
+    .modal__close {
+        top: 5px; 
+        right: 5px; 
+        padding: 5px; 
+    }
+}

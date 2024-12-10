@@ -59,7 +59,6 @@
 
 .description__image {
      max-width: 516px;
-     aspect-ratio: 1 / 1; 
      border-radius: 50%; 
      overflow: hidden;
      object-fit: contain;
@@ -73,11 +72,44 @@
   height: 100%;
 }
 
-@media (max-width: 1024px) {
-    .about-section__content {
-        flex-direction: column-reverse;
+@media (max-width: 768px) {
+    .description {
+        flex-direction: column; /* Переводим в колонку */
         align-items: center;
-        gap: 20px;
+        padding: 15px; /* Добавляем немного отступов */
+    }
+
+    .description__content {
+        flex-direction: column; /* Элементы внутри контента тоже вертикально */
+        align-items: center;
+        justify-content: center;
+        width: 100%; /* Чтобы контент занимал всю ширину */
+    }
+
+    .description__text {
+        width: 100%; /* Даем тексту 100% ширины */
+        align-items: center; /* Выравниваем текст по центру */
+        gap: 20px; /* Уменьшаем промежутки между блоками */
+    }
+
+    .description__text h1 {
+        font-size: 36px; /* Уменьшаем размер заголовка */
+        text-align: center; /* Центрируем заголовок */
+        margin-bottom: 20px; /* Добавляем отступ снизу */
+    }
+
+    .description__button {
+        width: 100%; 
+        padding: 20px 50px; 
+        font-size: 24px; 
+        max-width: none; 
+        max-height: none; 
+        margin-top: 20px; 
+    }
+
+    .description__image {
+        max-width: 100%; 
+        height: auto; 
     }
 
 }

@@ -28,8 +28,8 @@
   
   .quotes__list-item {
     padding: 15px;
-    border-left: 4px solid #dd56f2;
-    background-color: #f1e8fc;
+    border-left: 4px solid #b4defa;
+    background-color: #dae6f5;
     font-size: 16px;
     line-height: 1.5;
     color: #333;
@@ -49,3 +49,35 @@
     border-radius: 5px;
     border: 1px solid #ccc;
   }
+  
+  @media (max-width: 768px) {
+    .quotes {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 10px; 
+    }
+
+    .quotes__title {
+        font-size: 28px; 
+        margin-bottom: 10px; 
+    }
+
+    .quotes__list {
+        gap: 8px; 
+    }
+
+    .quotes__list-item {
+        font-size: 14px; 
+        padding: 10px; 
+    }
+
+    .quotes__controls {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    .quotes__select {
+        font-size: 12px; 
+        padding: 8px; 
+    }
+}

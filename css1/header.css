@@ -34,19 +34,30 @@
         
         flex-direction: column;
         align-items: center;
+        padding: 10px;
        
     }
 
     .header__content {
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        margin: 55px 0;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+    .header__nickname {
+        font-size: 28px; 
+        text-align: center; 
+        margin-bottom: 20px; 
     }
     .header__nav {
         flex-direction: column;
         align-items: center;
-        gap: 40px;
+        gap: 20px;
+        width: 100%; 
+    }
+    .header__nav a {
+        font-size: 28px; 
     }
 
 }

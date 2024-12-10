@@ -52,12 +52,27 @@
     font-family: 'Montserrat', sans-serif;
     color: #D9D9D9;
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
+    .skills-section__title {
+        font-size: 36px; 
+        margin-bottom: 20px; 
+    }
+
     .skills-section__content {
-        
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-       
+        gap: 15px; 
+    }
+
+    .skill {
+        max-height: 300px; 
+        width: 100%; 
+        margin: 15px 0; 
+    }
+
+    .skill__name {
+        font-size: 24px; 
+    }
+
+    .skill__image-container {
+        height: 150px; 
     }
 }

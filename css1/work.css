@@ -54,20 +54,39 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
 }
-
 @media (max-width: 768px) {
-    .project {
-        flex-direction: column; /* На мобильных устройствах: картинка над текстом */
-        text-align: center;
+    .work-section__title {
+        font-size: 48px; 
+        margin-bottom: 30px; 
     }
 
-    .project__image {
-        margin-right: 0;
-        margin-bottom: 20px;
-        width: 100%;
+    .work-section__content {
+        margin: 20px; 
+        gap: 30px; 
     }
 
-    .project--reversed {
-        flex-direction: column; /* Оставляем вертикальное выравнивание на мобильных */
+    .work_s {
+        flex-direction: column; 
+        gap: 20px; 
     }
-}
+
+    .work__image {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .work__info {
+        align-items: center;
+        margin-top: 10px; 
+    }
+
+    .work__title {
+        font-size: 28px; 
+        margin-bottom: 10px; 
+    }
+
+    .work__description {
+        font-size: 20px; 
+        text-align: center; 
+    }
+ }
